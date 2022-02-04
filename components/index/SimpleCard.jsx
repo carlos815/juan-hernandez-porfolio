@@ -7,7 +7,7 @@ export default function SimpleCard({ data }) {
     return (
 
         <Link href={`https://www.youtube.com/watch?v=${data.id.videoId}`} passHref>
-            <a className="bg-white w-full max-w-full cursor-pointer  hover:underline rounded overflow-hidden" >
+            <a className="bg-white w-full max-w-full cursor-pointer  hover:underline rounded overflow-hidden hover:shadow-md hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300" >
                 <div>
                     <Image src={thumbnail.url} width={thumbnail.width} height={thumbnail.height} layout="responsive" alt={`${data.snippet.title} thumbnail`} />
                 </div>

@@ -38,6 +38,9 @@ module.exports = {
       xl: "1020px",
     },
     extend: {
+      boxShadow: {
+        md: "4px 4px 13px 4px #D6DEE7",
+      },
       spacing: {
         18: "4.5rem",
       },

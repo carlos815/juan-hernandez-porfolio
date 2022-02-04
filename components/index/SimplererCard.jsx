@@ -7,8 +7,8 @@ export default function SimplererCard({ data }) {
     return (
 
         <Link href={url} passHref>
-            <a className="bg-white w-full max-w-full cursor-pointer  hover:underline rounded overflow-hidden " >
-                <div >
+            <a className="bg-white w-full max-w-full cursor-pointer  hover:underline rounded overflow-hidden  " >
+                <div className="hover:scale-110 transition-transform duration-300" >
                     <Image src={image} width={800} height={600} layout="responsive" alt="Dribbble image" />
                 </div>
             </a>
