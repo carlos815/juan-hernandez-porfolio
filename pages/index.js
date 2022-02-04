@@ -85,13 +85,6 @@ export default function Home({ youtubeData }) {
     </section>
   );
 
-  const sortedData = youtubeData.items.sort((a, b) => {
-    let da = new Date(a.snippet.publishedAt),
-      db = new Date(b.snippet.publishedAt);
-    return db - da;
-  });
-
-  console.log(sortedData);
   return (
     <div className="flex flex-col  animate-fade-in">
       <Head>

@@ -8,10 +8,10 @@ export default function Header({ data }) {
             <nav className='flex w-full'>
                 <ul className='flex w-full justify-center py-6 space-x-6  uppercase text-black text-base'>
                     <li>
-                        <Link className="hover:cursor-pointer" to="proyectos" activeClass='font-bold' spy={true} smooth={true} ><a href='#proyectos'>Proyectos</a></Link>
+                        <Link className="hover:cursor-pointer" to="proyectos" activeClass='font-bold' spy={true} smooth={true} >Proyectos</Link>
                     </li>
                     <li>
-                        <Link className="hover:cursor-pointer" to="videos" activeClass='font-bold' spy={true} smooth={true} ><a href='#videos'>Videos</a></Link>
+                        <Link className="hover:cursor-pointer" to="videos" activeClass='font-bold' spy={true} smooth={true} >Videos</Link>
                     </li>
 
                 </ul>
