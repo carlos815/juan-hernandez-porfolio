@@ -10,7 +10,7 @@ export default function ProjectCard({ data }) {
     const imageHeight = 315
 
     const image =
-        <a  >
+        <a>
             <Image src={thumbnailUrl} width={imageWidth} height={imageHeight} alt={`${title} image`} />
         </a>;
 

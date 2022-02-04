@@ -103,16 +103,16 @@ export default function Home({ youtubeData }) {
           className="flex flex-col"
           name="videos"
         >
-          <div className="gap-y-6 gap-x-6 grid xl:grid-cols-2 mb-12">
+          <div className="gap-y-6 gap-x-6 grid xl:grid-cols-3 mb-12">
             {youtubeData?.items
-              .sort((a, b) => {
+              ?.sort((a, b) => {
                 let da = new Date(a.snippet.publishedAt),
                   db = new Date(b.snippet.publishedAt);
                 return db - da;
               })
               .filter((item) => item.id.kind === "youtube#video")
               .map((item, index) => {
-                if (index > 1) return;
+                if (index > 2) return;
 
                 return <SimpleCard data={item} key={item.etag} />;
               })}
