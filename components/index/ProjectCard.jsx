@@ -8,10 +8,10 @@ export default function ProjectCard({ data }) {
 
     const imageWidth = 467
     const imageHeight = 315
-
+    const imageClassName = `w-[467px] xl:w-[315px]`
     const image =
-        <a className={`w-[${imageWidth}px] xl:w-[${imageHeight}px]`} >
-            <Image crossOrigin="anonymous" src={thumbnailUrl} width={imageWidth} height={imageHeight} />
+        <a className="w-[467px] xl:w-[315px]" >
+            <Image src={thumbnailUrl} width={imageWidth} height={imageHeight} alt={`${title} image`} />
         </a>;
 
 

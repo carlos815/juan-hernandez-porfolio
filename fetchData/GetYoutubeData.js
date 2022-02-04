@@ -17,7 +17,6 @@ export const getYoutubeData = async () => {
     const youtubeData = await youtubeRes.json();
     return youtubeData;
   } else {
-    //Mock data for dev mode
     console.log("Using mock data for youtube");
     const youtubeData = {
       kind: "youtube#searchListResponse",

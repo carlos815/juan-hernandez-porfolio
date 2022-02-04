@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import userData from "../../userData/userData";
-import styles from '../../styles/CopyButton.module.css'
 import { useState } from 'react';
 
 export default function CopyButton({ data }) {
@@ -14,8 +13,6 @@ export default function CopyButton({ data }) {
 
 
     }
-    const notification = <div>Copiaste mi correo a tu portapapeles! <span><img src="/assets/icons/grin-alt-regular.svg" alt="" srcset="" /></span></div>
-    const img = <img src="/assets/icons/grin-alt-regular.svg" alt="" srcset="" />
 
     return (
         <div className="group relative">
@@ -24,12 +21,10 @@ export default function CopyButton({ data }) {
             }}>
                 <p>{userData.email}</p>
 
-                <div className='group-hover:animate-wiggle  flex items-center'>                <Image src="/assets/copy.svg" height="14" width="14" />
+                <div className='group-hover:animate-wiggle  flex items-center'>                <Image src="/assets/copy.svg" height="14" width="14" alt="copy icon" />
                 </div>
             </button>
-
             <div className={`transition-opacity duration-500  w-full absolute text-center gap-3 items-center mt-4 justify-center ${!isCopyNotificationShown && "opacity-0"} text-body text-black`} >
-
                 <p>
                     Copiaste mi correo a tu portapapeles! <span>{":)"}</span>
                 </p></div>

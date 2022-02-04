@@ -1,13 +1,7 @@
-import Link from "next/link";
-import Image from 'next/image'
 import userData from "../../userData/userData";
 import CopyButton from "./CopyButton";
 
 export default function Hero({ data }) {
-    const copyCodeToClipboard = () => {
-        navigator.clipboard.writeText('juanhernandez@hey.com')
-    }
-    const notification = <div>Copiaste mi correo a tu portapapeles! <span><img src="/assets/icons/grin-alt-regular.svg" alt="" srcset="" /></span></div>
     return (
         <div className="w-full flex justify-center xl:my-[171px] my-36">
             <div className="max-w-2xl flex flex-col items-center">
