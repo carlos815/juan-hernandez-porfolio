@@ -64,12 +64,12 @@ export default function Home({ youtubeData }) {
   ];
 
   const HomeSection = ({ children, title, description, className, name }) => (
-    <section className={`w-full max-w-7xl ${className}`} name={name}>
+    <section className={`w-full max-w-7xl mb- ${className}`} name={name}>
       <h3 className=" text-xl text-black font-display font-bold mb-6 ">
         {title}
       </h3>
       {description && (
-        <p className="text-gray-300 font-body mb-12 xl:mb-18 xl:max-w-3xl">
+        <p className="text-gray-300 font-body mb-12 xl:mb-8 xl:max-w-3xl">
           {description}
         </p>
       )}
@@ -85,7 +85,7 @@ export default function Home({ youtubeData }) {
       </Head>
 
       <Header />
-      <main className="px-18 flex flex-col items-center gap-y-8 mb-8">
+      <main className="px-18 flex flex-col items-center gap-y-20 xl:gap-y-28 mb-8">
         <section>
           <Hero />
         </section>
