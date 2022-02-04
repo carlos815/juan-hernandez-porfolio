@@ -11,7 +11,7 @@ export default function ProjectCard({ data }) {
 
     const image =
         <a className={`w-[${imageWidth}px] xl:w-[${imageHeight}px]`} >
-            <Image src={thumbnailUrl} width={imageWidth} height={imageHeight} />
+            <Image crossOrigin="anonymous" src={thumbnailUrl} width={imageWidth} height={imageHeight} />
         </a>;
 
 
