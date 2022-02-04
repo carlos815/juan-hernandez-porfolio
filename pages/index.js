@@ -8,12 +8,13 @@ import SimpleCard from "../components/index/SimpleCard";
 import SimplererCard from "../components/index/SimplererCard";
 import { getYoutubeData } from "../fetchData/GetYoutubeData";
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const youtubeData = await getYoutubeData();
   return {
     props: {
       youtubeData,
     },
+    revalidate: 43200, //12 hours
   };
 }
 
