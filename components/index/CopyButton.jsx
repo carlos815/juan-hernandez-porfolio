@@ -9,7 +9,7 @@ export default function CopyButton({ data }) {
     const copyCodeToClipboard = async () => {
         const copyState = await navigator.clipboard.writeText(userData.email)
         setIsCopyNotificationShown(true)
-        await setTimeout(() => { setIsCopyNotificationShown(false); }, 3000); // wait
+        await setTimeout(() => { setIsCopyNotificationShown(false); }, 3000);
 
 
     }

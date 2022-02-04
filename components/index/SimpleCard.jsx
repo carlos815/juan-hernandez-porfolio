@@ -8,7 +8,7 @@ export default function SimpleCard({ data }) {
 
         <Link href={`https://www.youtube.com/watch?v=${data.id.videoId}`} passHref>
             <a className="bg-white w-full max-w-full cursor-pointer  hover:underline rounded overflow-hidden" >
-                <div className={`w-full bg-gray-200 h-[${thumbnail.height}px] overflow-hidden`}>
+                <div>
                     <Image src={thumbnail.url} width={thumbnail.width} height={thumbnail.height} layout="responsive" alt={`${data.snippet.title} thumbnail`} />
                 </div>
                 <h3 className="text-black text-lg m-6 mt-4 font-semibold">{data.snippet.title}</h3>
